@@ -1,0 +1,27 @@
+1512260237286	geckodriver	INFO	geckodriver 0.19.1
+1512260237311	geckodriver	INFO	Listening on 127.0.0.1:55883
+1512260238975	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.0NDE9t11MZj1"
+1512260245409	Marionette	ERROR	Error on starting server: [Exception... "Component returned failure code: 0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE) [nsIServerSocket.initSpecialConnection]"  nsresult: "0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE)"  location: "JS frame :: chrome://marionette/content/server.js :: MarionetteServer.prototype.start :: line 95"  data: no]
+[Exception... "Component returned failure code: 0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE) [nsIServerSocket.initSpecialConnection]"  nsresult: "0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE)"  location: "JS frame :: chrome://marionette/content/server.js :: MarionetteServer.prototype.start :: line 95"  data: no]
+MarionetteServer.prototype.start@chrome://marionette/content/server.js:95:19
+MarionetteComponent.prototype.init@resource://gre/components/marionette.js:217:5
+MarionetteComponent.prototype.handle@resource://gre/components/marionette.js:112:5
+
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1512342913551	geckodriver	INFO	geckodriver 0.19.1
+1512342913611	geckodriver	INFO	Listening on 127.0.0.1:51123
+1512342917235	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Bn3A1DhtvYIU"
+1512342926594	Marionette	INFO	Listening on port 2828
+1512343999760	geckodriver	INFO	geckodriver 0.19.1
+1512343999785	geckodriver	INFO	Listening on 127.0.0.1:39457
+1512344001771	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.rhuBeE8y3kAK"
+1512344034198	geckodriver	INFO	geckodriver 0.19.1
+1512344034225	geckodriver	INFO	Listening on 127.0.0.1:42967
+1512344035902	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.fZZD04nnJ6FT"
+1512344041378	Marionette	INFO	Listening on port 2828
+[Parent 5868] WARNING: waitpid failed pid:5944 errno:10: file /build/firefox-esr-TZmWSQ/firefox-esr-52.5.0esr/ipc/chromium/src/base/process_util_posix.cc, line 268
