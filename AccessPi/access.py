@@ -8,6 +8,7 @@ Warning Box pops up if the temperature or humidity is outside the permissible li
 import sys
 import http.client, urllib.request, urllib.parse, urllib.error, requests
 import base64, json
+from mqtt_socket import *
 
 #Importing Python Standard Libraries
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -314,13 +315,14 @@ class OuterWidget(QWidget):
                 if length>0:         
                         time.sleep(1)
                         _translate = QtCore.QCoreApplication.translate
-                        #p = 'Hello {}'. format(username)
+                        p = 'Hello %s'%(username)
                         print('India')
                         self.tab2.label.setText(_translate("Dash", "Hello Prithvi"))
                         self.tab2.label_2.setText(_translate("Dash", "You have been granted access to Book My Show, \n"
 "a Secure Voice Assisted movie show booking website"))
                         self.tab2.label_3.setText(_translate("Dash", "Do you want to add a new user?"))
-
+        #This function is used to send a message(websockets) containing the username to the control pi  
+                        send_message(username)
                         #p = 'Authentication Successful Welcome {}'. format(username)
                         #self.tab2.textDisplay.setText(p)
                         print(username)

@@ -23,7 +23,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>60</y>
+     <y>20</y>
      <width>421</width>
      <height>41</height>
     </rect>
@@ -45,7 +45,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>120</y>
+     <y>80</y>
      <width>641</width>
      <height>81</height>
     </rect>
@@ -65,8 +65,8 @@ a Secure Voice Assisted movie show booking website</string>
   <widget class="QPushButton" name="registerButton">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>300</y>
+     <x>450</x>
+     <y>330</y>
      <width>101</width>
      <height>31</height>
     </rect>
@@ -91,7 +91,7 @@ a Secure Voice Assisted movie show booking website</string>
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>310</y>
+     <y>340</y>
      <width>431</width>
      <height>21</height>
     </rect>
@@ -107,6 +107,28 @@ a Secure Voice Assisted movie show booking website</string>
     <string>Do you want to add a new user?</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="logoutButton">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>380</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Liberation Sans</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>true</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </widget>
  </widget>
  <resources>
   <include location="homepage_resource.qrc"/>
@@ -119,8 +141,8 @@ a Secure Voice Assisted movie show booking website</string>
    <slot>registerUser()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>518</x>
-     <y>321</y>
+     <x>508</x>
+     <y>351</y>
     </hint>
     <hint type="destinationlabel">
      <x>518</x>
@@ -128,8 +150,25 @@ a Secure Voice Assisted movie show booking website</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>logoutButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dashboard</receiver>
+   <slot>logout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>381</x>
+     <y>401</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>442</x>
+     <y>401</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>registerUser()</slot>
+  <slot>logout()</slot>
  </slots>
 </ui>
